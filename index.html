@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <title>Grade Calculator</title>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+<body>
+    <nav>
+        <div class="indigo darken-3 nav-wrapper">
+            <a href="#!" class="brand-logo left"><i class="material-icons">calculate</i>Grade Calculator</a>
+            <ul class="right">
+            <li><a href="https://manaskhosla.github.io"><i class="material-icons">home</i></a></li>
+          </ul>
+        </div>
+      </nav>
+      <br><br><br>
+      
+    <main>
+    <div class="container">
+        <div class="row">
+            <form class="col s12" id="gradeForm">
+                <div class="row ">
+                    <input placeholder="Marks" type="number" id="marks" name="marks" required>
+                </div>
+                <div class="row">
+                    <input placeholder="Total" type="number" id="total" name="total" required>
+                </div>
+                <div class="center-align">
+                    <button class="indigo darken-2 waves-effect waves-light btn-large" type="button" id="calculateButton">What's my grade?
+                        <!-- <i class="material-icons right">send</i> -->
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <h5 class="center-align" id="percentage">Percentage:</h5>
+                <h5 class="center-align" id="result">Grade:</h5>
+            </div>
+        </div>
+        <div class="row">
+            <h5 class="center-align" id="result"></h5>
+            <!-- <p ></p> -->
+        </div>
+    </div>
+    </main>
+    <footer class="indigo darken-3 page-footer">
+        <div class="footer-copyright">
+            <div class="container center-align">
+            Made with <span class="tiny material-icons" style="color: red">favorite</span> by <a class="indigo-text text-lighten-3" href="https://manaskhosla.github.io">Manas Khosla</a>
+            </div>
+        </div>
+    </footer>
+    <script src="calculateGrade.js"></script>
+</body>
+</html>
